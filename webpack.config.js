@@ -15,7 +15,7 @@ module.exports = {
     publicPath: "auto",
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    extensions: [".js", ".jsx"],
     // Uncomment this, if you're using react@17
     // fallback: {
     //   "react/jsx-runtime": "react/jsx-runtime.js",
@@ -89,8 +89,8 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     hot: true,
-    static: path.join(__dirname, "dist"),
     port: 3002,
     historyApiFallback: true,
+    static: path.join(__dirname, "dist"),
   },
 };
